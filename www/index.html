@@ -35,9 +35,10 @@
       <ion-scroll>
         <img ng-repeat="image in images" ng-src="{{urlForImage(image)}}" height="200px"/>
       </ion-scroll>
-      <ion-scroll>
-        <img ng-repeat="image in images" ng-src="{{loadImages(ladatut)}}" height="200px"/>
-      </ion-scroll>
+      <div>
+        <p>Kissa</p>
+        <img ng-repeat="picture in kuvat" ng-src="{{urlForImage(picture)}}" height="200px"/>
+      <div>
     </ion-view>
   </body>
 </html>

@@ -53,8 +53,9 @@ Blank.controller('imageController', function($scope, $cordovaCamera, $cordovaFil
 
     //Saveimage
 
-    $scope.images = [];
 
+    $scope.images = [];
+    $scope.kuvat = [];
     //KIMI! Täs on tää millä sen pitäis lataa ne kuvat localstoragesta
 
 
@@ -65,13 +66,11 @@ Blank.controller('imageController', function($scope, $cordovaCamera, $cordovaFil
 
       var data = window.localStorage.getItem('images');
 
-      var ladatut = angular.fromJson(data);
+      var pictures = angular.fromJson(data);
 
-      alert(data);
-
-      alert(ladatut);
+      alert(pictures);
       
-      $scope.images.push(ladatut);
+      $scope.kuvat.push(pictures);
       
     };
  
