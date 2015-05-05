@@ -67,10 +67,10 @@ Blank.controller('imageController', function($scope, $cordovaCamera, $cordovaFil
       var data = window.localStorage.getItem('images');
 
       var pictures = angular.fromJson(data);
-
-      alert(pictures);
       
       $scope.kuvat.push(pictures);
+
+      alert(kuvat);
       
     };
  
